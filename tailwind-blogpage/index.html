@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind BlogPage</title>
+  </head>
+  <body class="font-body">
+      <div class="container mx-auto">
+        <section>
+          <div class="header flex justify-center align-center mx-auto py-8">
+            <svg
+            class="fill-current h-10 w-10 mr-3"
+            viewBox="0 0 54 54"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z"
+            />
+          </svg>
+          <h1 class="font-title font-bold text-3xl md:text-4xl text-blue-500">Tailwind Blogs</h1>
+          </div>
+          <div class="md:flex text-center md:justify-between ">
+            <nav>
+              <ul class="text-lg space-x-4">
+                <li class="my-3 md:my-0 inline-block"><a href="#" class="text-primary hover:text-secondary transition duration-300">Home</a></li>
+                <li class="my-3 md:my-0 inline-block"><a href="#" class="text-primary hover:text-secondary transition duration-300">About</a></li> 
+                <li class="my-3 md:my-0 inline-block"><a href="#" class="text-primary hover:text-secondary transition duration-300">Contact</a></li> 
+                <li class="my-3 md:my-0 inline-block"><a href="#" class="text-primary hover:text-secondary transition duration-300">Products</a></li>  
+            </ul>
+            </nav>
+            <input type="search" name="" id="" class="border-2 border-blue-200 rounded-full shadow-inner focus:outline-none focus:ring-1 px-8 py-2" placeholder="Search...">
+          </div>
+        </section>
+
+        <!-- Starting of the blog -->
+        <section class="pt-12">
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 lg:gap-x-12 gap-y-8 sm:gap-y-12 lg:gap-y-16"
+          >
+            <!-- First row all the columns merged for large screens -->
+            <div class="col-span-1 md:col-span-2 lg:col-span-3">
+              <a
+                href="#"
+                class="border border-gray-100 block md:flex rounded-3xl overflow-hidden transition duration-300 hover:shadow-lg"
+              >
+                <div class="md:w-1/2">
+                  <img
+                    src="images/img1.jpg"
+                    alt="blog image 1"
+                    class="h-full w-full"
+                  />
+                </div>
+                <div class="md:w-1/2 p-4 md:p-7">
+                  <p
+                    class="px-3 py-1 bg-blue-200 rounded text-secondary text-xs inline"
+                  >
+                    FEATURED
+                  </p>
+  
+                  <h2
+                    class="font-bold text-primary text-xl md:text-2xl font-title py-3 transition duration-300 hover:text-secondary"
+                  >
+                    What is a brand style guide?
+                  </h2>
+                  <p class="text-neutral pb-5">
+                    Basically, a brand style guide is a reference sheet that tells
+                    about how a company’s logo, tagline, colors, etc. visuals
+                    should be used. The guide, therefore, has some examples of how
+                    a particular company’s logo must look in all situations.
+                  </p>
+                  <p class="text-neutral pb-5">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptatibus quisquam tempora sapiente iusto dolorum ad fuga
+                    ratione optio fugiat id officiis, maiores doloribus
+                    consequatur praesentium deleniti harum molestiae rem iste?
+                  </p>
+                  <div class="flex items-center">
+                    <img
+                      src="images/author1.jpg"
+                      alt="author1"
+                      class="w-9 h-9 rounded-full"
+                    />
+                    <div class="pl-3">
+                      <h6 class="text-xs text-primary font-bold">John Smith</h6>
+                      <p class="text-xs text-neutral">Brand Marketer</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+  
+            <!-- Second row starts here -->
+            <div class="blog-card">
+              <a href="#">
+                <img src="images/img2.jpg" alt="" />
+                <div class="px-4 pb-6">
+                  <h2 class="post-title">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  </h2>
+                  <p class="text-neutral pb-5">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
+                    magnam exercitationem unde neque! Iste consequuntur ab, unde
+                    libero molestiae animi.
+                  </p>
+                  <div class="flex items-center">
+                    <img
+                      src="images/author1.jpg"
+                      alt=""
+                      class="h-9 w-9 rounded-full"
+                    />
+                    <div class="pl-3">
+                      <h6 class="text-xs text-primary font-bold">John Smith</h6>
+                      <p class="text-xs text-neutral">Brand Marketer</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="blog-card">
+              <a href="#">
+                <img src="images/img3.jpg" alt="" />
+                <div class="px-4 pb-6">
+                  <h2 class="post-title">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  </h2>
+                  <p class="text-neutral pb-5">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
+                    magnam exercitationem unde neque! Iste consequuntur ab, unde
+                    libero molestiae animi.
+                  </p>
+                  <div class="flex items-center">
+                    <img
+                      src="images/author2.jpg"
+                      alt=""
+                      class="h-9 w-9 rounded-full"
+                    />
+                    <div class="pl-3">
+                      <h6 class="text-xs text-primary font-bold">John Smith</h6>
+                      <p class="text-xs text-neutral">Brand Marketer</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="blog-card">
+              <a href="#">
+                <img src="images/img4.jpg" alt="" />
+                <div class="px-4 pb-6">
+                  <h2 class="post-title">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  </h2>
+                  <p class="text-neutral pb-5">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
+                    magnam exercitationem unde neque! Iste consequuntur ab, unde
+                    libero molestiae animi.
+                  </p>
+                  <div class="flex items-center">
+                    <img
+                      src="images/author1.jpg"
+                      alt=""
+                      class="h-9 w-9 rounded-full"
+                    />
+                    <div class="pl-3">
+                      <h6 class="text-xs text-primary font-bold">John Smith</h6>
+                      <p class="text-xs text-neutral">Brand Marketer</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+  
+            <!-- Last row starts here -->
+            <div class="blog-card col-span-1 lg:col-span-2">
+              <a href="#">
+                <img src="images/img5.jpg" alt="" class="lg:h-72 w-full" />
+                <div class="px-4 pb-6">
+                  <h2 class="post-title">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </h2>
+                  <p class="text-neutral pb-5">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+                    nisi iusto esse sapiente est! Accusamus labore voluptas
+                    voluptatibus tempore ipsum.
+                  </p>
+                  <div class="flex items-center">
+                    <img
+                      src="images/author1.jpg"
+                      alt=""
+                      class="h-9 w-9 rounded-full"
+                    />
+                    <div class="pl-3">
+                      <h6 class="text-xs text-primary font-bold">John Smith</h6>
+                      <p class="text-xs text-neutral">Brand Marketer</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="blog-card">
+              <a href="#">
+                <img src="images/img6.jpg" alt="" />
+                <div class="px-4 pb-6">
+                  <h2 class="post-title">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  </h2>
+                  <p class="text-neutral pb-5">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
+                    magnam exercitationem unde neque! Iste consequuntur ab, unde
+                    libero molestiae animi.
+                  </p>
+                  <div class="flex items-center">
+                    <img
+                      src="images/author1.jpg"
+                      alt=""
+                      class="h-9 w-9 rounded-full"
+                    />
+                    <div class="pl-3">
+                      <h6 class="text-xs text-primary font-bold">John Smith</h6>
+                      <p class="text-xs text-neutral">Brand Marketer</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </section>
+  
+        <!-- Subcribe section starts here -->
+        <section>
+          <div class="text-center mx-auto py-12 sm:py-18 lg:py-30">
+            <h6 class="text-3xl md:text-5xl font-bold font-title text-primary">
+              Subscribe to our <br />
+              <span class="text-secondary">Blog</span>
+            </h6>
+            <p class="max-w-xs mx-auto text-primary py-6">
+              Please subscribe to get regular updates and featured news through
+              your email!
+            </p>
+            <input
+              type="email"
+              name=""
+              id=""
+              class="px-8 py-2 rounded-t-3xl border border-blue-200 shadow-inner focus:outline-none"
+              placeholder="Email Address"
+            />
+            <input
+              type="submit"
+              value="Submit"
+              class="-ml-12 px-8 py-2 rounded-3xl bg-secondary text-white hover:bg-blue-800 focus:outline-none focus:ring-1 cursor-pointer"
+            />
+          </div>
+        </section>
+      </div>
+      <!-- Footer starts here -->
+      <section>
+        <footer class="bg-primary py-8">
+          <div
+            class="text-center text-white font-black font-title tracking-wider"
+          >
+            All rights reserved @2022
+          </div>
+        </footer>
+      </section>
+    </body>
+  </html>
